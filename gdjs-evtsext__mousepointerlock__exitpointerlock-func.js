@@ -9,7 +9,7 @@ gdjs.evtsExt__MousePointerLock__ExitPointerLock = {};
 gdjs.evtsExt__MousePointerLock__ExitPointerLock.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__MousePointerLock__ExitPointerLock.userFunc0x29b94f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__MousePointerLock__ExitPointerLock.userFunc0x1864680 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 document.exitPointerLock();
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__MousePointerLock__ExitPointerLock.eventsList0 = function(runtimeSc
 {
 
 
-gdjs.evtsExt__MousePointerLock__ExitPointerLock.userFunc0x29b94f8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__MousePointerLock__ExitPointerLock.userFunc0x1864680(runtimeScene, eventsFunctionContext);
 
 }
 
