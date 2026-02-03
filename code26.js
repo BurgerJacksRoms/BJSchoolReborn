@@ -1,160 +1,152 @@
-gdjs.gamemodeNewCode = {};
-gdjs.gamemodeNewCode.localVariables = [];
-gdjs.gamemodeNewCode.idToCallbackMap = new Map();
-gdjs.gamemodeNewCode.GDRedButtonObjects1= [];
-gdjs.gamemodeNewCode.GDRedButtonObjects2= [];
-gdjs.gamemodeNewCode.GDNewSpriteObjects1= [];
-gdjs.gamemodeNewCode.GDNewSpriteObjects2= [];
-gdjs.gamemodeNewCode.GDNewSprite2Objects1= [];
-gdjs.gamemodeNewCode.GDNewSprite2Objects2= [];
-gdjs.gamemodeNewCode.GDNewSprite3Objects1= [];
-gdjs.gamemodeNewCode.GDNewSprite3Objects2= [];
-gdjs.gamemodeNewCode.GDNewButtonObjects1= [];
-gdjs.gamemodeNewCode.GDNewButtonObjects2= [];
-gdjs.gamemodeNewCode.GDNewTextObjects1= [];
-gdjs.gamemodeNewCode.GDNewTextObjects2= [];
-gdjs.gamemodeNewCode.GDBlock1Objects1= [];
-gdjs.gamemodeNewCode.GDBlock1Objects2= [];
-gdjs.gamemodeNewCode.GDWoodObjects1= [];
-gdjs.gamemodeNewCode.GDWoodObjects2= [];
-gdjs.gamemodeNewCode.GDGrassGroundObjects1= [];
-gdjs.gamemodeNewCode.GDGrassGroundObjects2= [];
-gdjs.gamemodeNewCode.GDBlockInvObjects1= [];
-gdjs.gamemodeNewCode.GDBlockInvObjects2= [];
-gdjs.gamemodeNewCode.GDStairs1Objects1= [];
-gdjs.gamemodeNewCode.GDStairs1Objects2= [];
-gdjs.gamemodeNewCode.GDStairsInvObjects1= [];
-gdjs.gamemodeNewCode.GDStairsInvObjects2= [];
-gdjs.gamemodeNewCode.GDWoodStrsObjects1= [];
-gdjs.gamemodeNewCode.GDWoodStrsObjects2= [];
-gdjs.gamemodeNewCode.GDStopCrouchTrgObjects1= [];
-gdjs.gamemodeNewCode.GDStopCrouchTrgObjects2= [];
-gdjs.gamemodeNewCode.GDCameraObjects1= [];
-gdjs.gamemodeNewCode.GDCameraObjects2= [];
-gdjs.gamemodeNewCode.GDCamera2Objects1= [];
-gdjs.gamemodeNewCode.GDCamera2Objects2= [];
-gdjs.gamemodeNewCode.GDCameraColliderObjects1= [];
-gdjs.gamemodeNewCode.GDCameraColliderObjects2= [];
-gdjs.gamemodeNewCode.GDPaperObjects1= [];
-gdjs.gamemodeNewCode.GDPaperObjects2= [];
-gdjs.gamemodeNewCode.GDKeyObjects1= [];
-gdjs.gamemodeNewCode.GDKeyObjects2= [];
-gdjs.gamemodeNewCode.GDItemObjects1= [];
-gdjs.gamemodeNewCode.GDItemObjects2= [];
-gdjs.gamemodeNewCode.GDVendingMachine1Objects1= [];
-gdjs.gamemodeNewCode.GDVendingMachine1Objects2= [];
-gdjs.gamemodeNewCode.GDVendingMachine2Objects1= [];
-gdjs.gamemodeNewCode.GDVendingMachine2Objects2= [];
-gdjs.gamemodeNewCode.GDInteractTextObjects1= [];
-gdjs.gamemodeNewCode.GDInteractTextObjects2= [];
-gdjs.gamemodeNewCode.GDPaperUIObjects1= [];
-gdjs.gamemodeNewCode.GDPaperUIObjects2= [];
-gdjs.gamemodeNewCode.GDPaperTextObjects1= [];
-gdjs.gamemodeNewCode.GDPaperTextObjects2= [];
-gdjs.gamemodeNewCode.GDDoorObjects1= [];
-gdjs.gamemodeNewCode.GDDoorObjects2= [];
-gdjs.gamemodeNewCode.GDDoorWayPointObjects1= [];
-gdjs.gamemodeNewCode.GDDoorWayPointObjects2= [];
-gdjs.gamemodeNewCode.GDFadeBLACKObjects1= [];
-gdjs.gamemodeNewCode.GDFadeBLACKObjects2= [];
-gdjs.gamemodeNewCode.GDCrossObjects1= [];
-gdjs.gamemodeNewCode.GDCrossObjects2= [];
-gdjs.gamemodeNewCode.GDInfo_9595TextObjects1= [];
-gdjs.gamemodeNewCode.GDInfo_9595TextObjects2= [];
-gdjs.gamemodeNewCode.GDScary_9595PersonObjects1= [];
-gdjs.gamemodeNewCode.GDScary_9595PersonObjects2= [];
-gdjs.gamemodeNewCode.GDItemsUIObjects1= [];
-gdjs.gamemodeNewCode.GDItemsUIObjects2= [];
-gdjs.gamemodeNewCode.GDStaminaObjects1= [];
-gdjs.gamemodeNewCode.GDStaminaObjects2= [];
-gdjs.gamemodeNewCode.GDBaldiUIObjects1= [];
-gdjs.gamemodeNewCode.GDBaldiUIObjects2= [];
-gdjs.gamemodeNewCode.GDBaldiUIStaminaObjects1= [];
-gdjs.gamemodeNewCode.GDBaldiUIStaminaObjects2= [];
-gdjs.gamemodeNewCode.GDItemSlotObjects1= [];
-gdjs.gamemodeNewCode.GDItemSlotObjects2= [];
-gdjs.gamemodeNewCode.GDItemInventoryObjects1= [];
-gdjs.gamemodeNewCode.GDItemInventoryObjects2= [];
-gdjs.gamemodeNewCode.GDSodaSplashObjects1= [];
-gdjs.gamemodeNewCode.GDSodaSplashObjects2= [];
-gdjs.gamemodeNewCode.GDBearTrapObjects1= [];
-gdjs.gamemodeNewCode.GDBearTrapObjects2= [];
-gdjs.gamemodeNewCode.GDBlackBarsObjects1= [];
-gdjs.gamemodeNewCode.GDBlackBarsObjects2= [];
-gdjs.gamemodeNewCode.GDVendingMachine3Objects1= [];
-gdjs.gamemodeNewCode.GDVendingMachine3Objects2= [];
-gdjs.gamemodeNewCode.GDBaldiEnemyObjects1= [];
-gdjs.gamemodeNewCode.GDBaldiEnemyObjects2= [];
-gdjs.gamemodeNewCode.GDfloorObjects1= [];
-gdjs.gamemodeNewCode.GDfloorObjects2= [];
-gdjs.gamemodeNewCode.GDfloor2Objects1= [];
-gdjs.gamemodeNewCode.GDfloor2Objects2= [];
-gdjs.gamemodeNewCode.GDBlock2Objects1= [];
-gdjs.gamemodeNewCode.GDBlock2Objects2= [];
-gdjs.gamemodeNewCode.GDBlock3Objects1= [];
-gdjs.gamemodeNewCode.GDBlock3Objects2= [];
-gdjs.gamemodeNewCode.GDfakewallObjects1= [];
-gdjs.gamemodeNewCode.GDfakewallObjects2= [];
-gdjs.gamemodeNewCode.GDBlock3AltObjects1= [];
-gdjs.gamemodeNewCode.GDBlock3AltObjects2= [];
-gdjs.gamemodeNewCode.GDelevatorfloorObjects1= [];
-gdjs.gamemodeNewCode.GDelevatorfloorObjects2= [];
-gdjs.gamemodeNewCode.GDElevatorWallObjects1= [];
-gdjs.gamemodeNewCode.GDElevatorWallObjects2= [];
-gdjs.gamemodeNewCode.GDRedNetObjects1= [];
-gdjs.gamemodeNewCode.GDRedNetObjects2= [];
-gdjs.gamemodeNewCode.GDGreenNetObjects1= [];
-gdjs.gamemodeNewCode.GDGreenNetObjects2= [];
-gdjs.gamemodeNewCode.GDYellowNetObjects1= [];
-gdjs.gamemodeNewCode.GDYellowNetObjects2= [];
-gdjs.gamemodeNewCode.GDBlueNetObjects1= [];
-gdjs.gamemodeNewCode.GDBlueNetObjects2= [];
-gdjs.gamemodeNewCode.GDRedFloorObjects1= [];
-gdjs.gamemodeNewCode.GDRedFloorObjects2= [];
-gdjs.gamemodeNewCode.GDGreenFloorObjects1= [];
-gdjs.gamemodeNewCode.GDGreenFloorObjects2= [];
-gdjs.gamemodeNewCode.GDYellowFloorObjects1= [];
-gdjs.gamemodeNewCode.GDYellowFloorObjects2= [];
-gdjs.gamemodeNewCode.GDBlueFloorObjects1= [];
-gdjs.gamemodeNewCode.GDBlueFloorObjects2= [];
-gdjs.gamemodeNewCode.GDBallpitBallsObjects1= [];
-gdjs.gamemodeNewCode.GDBallpitBallsObjects2= [];
-gdjs.gamemodeNewCode.GDHandObjects1= [];
-gdjs.gamemodeNewCode.GDHandObjects2= [];
-gdjs.gamemodeNewCode.GDhandmarkerObjects1= [];
-gdjs.gamemodeNewCode.GDhandmarkerObjects2= [];
-gdjs.gamemodeNewCode.GDhandmarker2Objects1= [];
-gdjs.gamemodeNewCode.GDhandmarker2Objects2= [];
-gdjs.gamemodeNewCode.GDcursorObjects1= [];
-gdjs.gamemodeNewCode.GDcursorObjects2= [];
-gdjs.gamemodeNewCode.GDPaddedWallObjects1= [];
-gdjs.gamemodeNewCode.GDPaddedWallObjects2= [];
-gdjs.gamemodeNewCode.GDPaddedFloorObjects1= [];
-gdjs.gamemodeNewCode.GDPaddedFloorObjects2= [];
-gdjs.gamemodeNewCode.GDPaddedWallSMG4Objects1= [];
-gdjs.gamemodeNewCode.GDPaddedWallSMG4Objects2= [];
-gdjs.gamemodeNewCode.GDBlock4Objects1= [];
-gdjs.gamemodeNewCode.GDBlock4Objects2= [];
-gdjs.gamemodeNewCode.GDBlock1DetentionObjects1= [];
-gdjs.gamemodeNewCode.GDBlock1DetentionObjects2= [];
-gdjs.gamemodeNewCode.GDPosterObjects1= [];
-gdjs.gamemodeNewCode.GDPosterObjects2= [];
-gdjs.gamemodeNewCode.GDPoster2Objects1= [];
-gdjs.gamemodeNewCode.GDPoster2Objects2= [];
-gdjs.gamemodeNewCode.GDPoster3Objects1= [];
-gdjs.gamemodeNewCode.GDPoster3Objects2= [];
-gdjs.gamemodeNewCode.GDItemInventory2Objects1= [];
-gdjs.gamemodeNewCode.GDItemInventory2Objects2= [];
+gdjs.winCode = {};
+gdjs.winCode.localVariables = [];
+gdjs.winCode.idToCallbackMap = new Map();
+gdjs.winCode.GDNewSpriteObjects1= [];
+gdjs.winCode.GDNewSpriteObjects2= [];
+gdjs.winCode.GDBlock1Objects1= [];
+gdjs.winCode.GDBlock1Objects2= [];
+gdjs.winCode.GDWoodObjects1= [];
+gdjs.winCode.GDWoodObjects2= [];
+gdjs.winCode.GDGrassGroundObjects1= [];
+gdjs.winCode.GDGrassGroundObjects2= [];
+gdjs.winCode.GDBlockInvObjects1= [];
+gdjs.winCode.GDBlockInvObjects2= [];
+gdjs.winCode.GDStairs1Objects1= [];
+gdjs.winCode.GDStairs1Objects2= [];
+gdjs.winCode.GDStairsInvObjects1= [];
+gdjs.winCode.GDStairsInvObjects2= [];
+gdjs.winCode.GDWoodStrsObjects1= [];
+gdjs.winCode.GDWoodStrsObjects2= [];
+gdjs.winCode.GDStopCrouchTrgObjects1= [];
+gdjs.winCode.GDStopCrouchTrgObjects2= [];
+gdjs.winCode.GDCameraObjects1= [];
+gdjs.winCode.GDCameraObjects2= [];
+gdjs.winCode.GDCamera2Objects1= [];
+gdjs.winCode.GDCamera2Objects2= [];
+gdjs.winCode.GDCameraColliderObjects1= [];
+gdjs.winCode.GDCameraColliderObjects2= [];
+gdjs.winCode.GDPaperObjects1= [];
+gdjs.winCode.GDPaperObjects2= [];
+gdjs.winCode.GDKeyObjects1= [];
+gdjs.winCode.GDKeyObjects2= [];
+gdjs.winCode.GDItemObjects1= [];
+gdjs.winCode.GDItemObjects2= [];
+gdjs.winCode.GDVendingMachine1Objects1= [];
+gdjs.winCode.GDVendingMachine1Objects2= [];
+gdjs.winCode.GDVendingMachine2Objects1= [];
+gdjs.winCode.GDVendingMachine2Objects2= [];
+gdjs.winCode.GDInteractTextObjects1= [];
+gdjs.winCode.GDInteractTextObjects2= [];
+gdjs.winCode.GDPaperUIObjects1= [];
+gdjs.winCode.GDPaperUIObjects2= [];
+gdjs.winCode.GDPaperTextObjects1= [];
+gdjs.winCode.GDPaperTextObjects2= [];
+gdjs.winCode.GDDoorObjects1= [];
+gdjs.winCode.GDDoorObjects2= [];
+gdjs.winCode.GDDoorWayPointObjects1= [];
+gdjs.winCode.GDDoorWayPointObjects2= [];
+gdjs.winCode.GDFadeBLACKObjects1= [];
+gdjs.winCode.GDFadeBLACKObjects2= [];
+gdjs.winCode.GDCrossObjects1= [];
+gdjs.winCode.GDCrossObjects2= [];
+gdjs.winCode.GDInfo_9595TextObjects1= [];
+gdjs.winCode.GDInfo_9595TextObjects2= [];
+gdjs.winCode.GDScary_9595PersonObjects1= [];
+gdjs.winCode.GDScary_9595PersonObjects2= [];
+gdjs.winCode.GDItemsUIObjects1= [];
+gdjs.winCode.GDItemsUIObjects2= [];
+gdjs.winCode.GDStaminaObjects1= [];
+gdjs.winCode.GDStaminaObjects2= [];
+gdjs.winCode.GDBaldiUIObjects1= [];
+gdjs.winCode.GDBaldiUIObjects2= [];
+gdjs.winCode.GDBaldiUIStaminaObjects1= [];
+gdjs.winCode.GDBaldiUIStaminaObjects2= [];
+gdjs.winCode.GDItemSlotObjects1= [];
+gdjs.winCode.GDItemSlotObjects2= [];
+gdjs.winCode.GDItemInventoryObjects1= [];
+gdjs.winCode.GDItemInventoryObjects2= [];
+gdjs.winCode.GDSodaSplashObjects1= [];
+gdjs.winCode.GDSodaSplashObjects2= [];
+gdjs.winCode.GDBearTrapObjects1= [];
+gdjs.winCode.GDBearTrapObjects2= [];
+gdjs.winCode.GDBlackBarsObjects1= [];
+gdjs.winCode.GDBlackBarsObjects2= [];
+gdjs.winCode.GDVendingMachine3Objects1= [];
+gdjs.winCode.GDVendingMachine3Objects2= [];
+gdjs.winCode.GDBaldiEnemyObjects1= [];
+gdjs.winCode.GDBaldiEnemyObjects2= [];
+gdjs.winCode.GDfloorObjects1= [];
+gdjs.winCode.GDfloorObjects2= [];
+gdjs.winCode.GDfloor2Objects1= [];
+gdjs.winCode.GDfloor2Objects2= [];
+gdjs.winCode.GDBlock2Objects1= [];
+gdjs.winCode.GDBlock2Objects2= [];
+gdjs.winCode.GDBlock3Objects1= [];
+gdjs.winCode.GDBlock3Objects2= [];
+gdjs.winCode.GDfakewallObjects1= [];
+gdjs.winCode.GDfakewallObjects2= [];
+gdjs.winCode.GDBlock3AltObjects1= [];
+gdjs.winCode.GDBlock3AltObjects2= [];
+gdjs.winCode.GDelevatorfloorObjects1= [];
+gdjs.winCode.GDelevatorfloorObjects2= [];
+gdjs.winCode.GDElevatorWallObjects1= [];
+gdjs.winCode.GDElevatorWallObjects2= [];
+gdjs.winCode.GDRedNetObjects1= [];
+gdjs.winCode.GDRedNetObjects2= [];
+gdjs.winCode.GDGreenNetObjects1= [];
+gdjs.winCode.GDGreenNetObjects2= [];
+gdjs.winCode.GDYellowNetObjects1= [];
+gdjs.winCode.GDYellowNetObjects2= [];
+gdjs.winCode.GDBlueNetObjects1= [];
+gdjs.winCode.GDBlueNetObjects2= [];
+gdjs.winCode.GDRedFloorObjects1= [];
+gdjs.winCode.GDRedFloorObjects2= [];
+gdjs.winCode.GDGreenFloorObjects1= [];
+gdjs.winCode.GDGreenFloorObjects2= [];
+gdjs.winCode.GDYellowFloorObjects1= [];
+gdjs.winCode.GDYellowFloorObjects2= [];
+gdjs.winCode.GDBlueFloorObjects1= [];
+gdjs.winCode.GDBlueFloorObjects2= [];
+gdjs.winCode.GDBallpitBallsObjects1= [];
+gdjs.winCode.GDBallpitBallsObjects2= [];
+gdjs.winCode.GDHandObjects1= [];
+gdjs.winCode.GDHandObjects2= [];
+gdjs.winCode.GDhandmarkerObjects1= [];
+gdjs.winCode.GDhandmarkerObjects2= [];
+gdjs.winCode.GDhandmarker2Objects1= [];
+gdjs.winCode.GDhandmarker2Objects2= [];
+gdjs.winCode.GDcursorObjects1= [];
+gdjs.winCode.GDcursorObjects2= [];
+gdjs.winCode.GDPaddedWallObjects1= [];
+gdjs.winCode.GDPaddedWallObjects2= [];
+gdjs.winCode.GDPaddedFloorObjects1= [];
+gdjs.winCode.GDPaddedFloorObjects2= [];
+gdjs.winCode.GDPaddedWallSMG4Objects1= [];
+gdjs.winCode.GDPaddedWallSMG4Objects2= [];
+gdjs.winCode.GDBlock4Objects1= [];
+gdjs.winCode.GDBlock4Objects2= [];
+gdjs.winCode.GDBlock1DetentionObjects1= [];
+gdjs.winCode.GDBlock1DetentionObjects2= [];
+gdjs.winCode.GDPosterObjects1= [];
+gdjs.winCode.GDPosterObjects2= [];
+gdjs.winCode.GDPoster2Objects1= [];
+gdjs.winCode.GDPoster2Objects2= [];
+gdjs.winCode.GDPoster3Objects1= [];
+gdjs.winCode.GDPoster3Objects2= [];
+gdjs.winCode.GDItemInventory2Objects1= [];
+gdjs.winCode.GDItemInventory2Objects2= [];
+gdjs.winCode.GDbaldicatorObjects1= [];
+gdjs.winCode.GDbaldicatorObjects2= [];
 
 
-gdjs.gamemodeNewCode.asyncCallback64641084 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "chapter1", false);
+gdjs.winCode.asyncCallback63666364 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.winCode.localVariables);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "titleNew", false);
 }
-gdjs.gamemodeNewCode.localVariables.length = 0;
+gdjs.winCode.localVariables.length = 0;
 }
-gdjs.gamemodeNewCode.idToCallbackMap.set(64641084, gdjs.gamemodeNewCode.asyncCallback64641084);
-gdjs.gamemodeNewCode.eventsList0 = function(runtimeScene) {
+gdjs.winCode.idToCallbackMap.set(63666364, gdjs.winCode.asyncCallback63666364);
+gdjs.winCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -162,199 +154,15 @@ gdjs.gamemodeNewCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64641084(runtimeScene, asyncObjectsList)), 64641084, asyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.winCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.winCode.asyncCallback63666364(runtimeScene, asyncObjectsList)), 63666364, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.gamemodeNewCode.asyncCallback64649652 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "chapter3", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64649652, gdjs.gamemodeNewCode.asyncCallback64649652);
-gdjs.gamemodeNewCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64649652(runtimeScene, asyncObjectsList)), 64649652, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.asyncCallback64650756 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "fast", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64650756, gdjs.gamemodeNewCode.asyncCallback64650756);
-gdjs.gamemodeNewCode.eventsList2 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64650756(runtimeScene, asyncObjectsList)), 64650756, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.asyncCallback64651700 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "blabi", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64651700, gdjs.gamemodeNewCode.asyncCallback64651700);
-gdjs.gamemodeNewCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64651700(runtimeScene, asyncObjectsList)), 64651700, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.asyncCallback64652644 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "rob", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64652644, gdjs.gamemodeNewCode.asyncCallback64652644);
-gdjs.gamemodeNewCode.eventsList4 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64652644(runtimeScene, asyncObjectsList)), 64652644, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.asyncCallback64653588 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "spongebob", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64653588, gdjs.gamemodeNewCode.asyncCallback64653588);
-gdjs.gamemodeNewCode.eventsList5 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64653588(runtimeScene, asyncObjectsList)), 64653588, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.asyncCallback64654532 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "stopSelect", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64654532, gdjs.gamemodeNewCode.asyncCallback64654532);
-gdjs.gamemodeNewCode.eventsList6 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64654532(runtimeScene, asyncObjectsList)), 64654532, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.asyncCallback64655516 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "scary bear escape", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64655516, gdjs.gamemodeNewCode.asyncCallback64655516);
-gdjs.gamemodeNewCode.eventsList7 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64655516(runtimeScene, asyncObjectsList)), 64655516, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.asyncCallback64656436 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "ballie", false);
-}
-gdjs.gamemodeNewCode.localVariables.length = 0;
-}
-gdjs.gamemodeNewCode.idToCallbackMap.set(64656436, gdjs.gamemodeNewCode.asyncCallback64656436);
-gdjs.gamemodeNewCode.eventsList8 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.gamemodeNewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.gamemodeNewCode.asyncCallback64656436(runtimeScene, asyncObjectsList)), 64656436, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.gamemodeNewCode.eventsList9 = function(runtimeScene) {
+};gdjs.winCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -363,627 +171,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Gamemode Select.wav", 1, true, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "WIN.wav", false, 100, 1);
 }
-{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(0);
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("RedButton"), gdjs.gamemodeNewCode.GDRedButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDRedButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDRedButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDRedButtonObjects1[k] = gdjs.gamemodeNewCode.GDRedButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDRedButtonObjects1.length = k;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "titleNew", false);
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("Normal mode: Play with BJ in his fun schoolhouse!");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("normal");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 1);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH WRATH");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("wrath");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 2);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("Fast mode: OMG HE'S FAST NOW!!!");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("fast");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 3);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("Blabi mode: It's Blabi from YBBR!");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("blabi");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 4);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL PULL");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("rob");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 5);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("Spongebob mode: It's Spongebob from Spongebob!");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("spong");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 6);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("T̶̛̝͇̩̲̜͙̦̰̹̓̈̆͆͊͘͜͝Ư̶̛̟̙̬̣̳̿̾̓̌̇͐́R̶̡̨̡̧͕̬͕̝̱̘̱̟̯͉̫̃͋N̶̡̛̙̥̫̤͐̅̌̾́̏̌̆̒̉̾͗̑͘̚͝ ̵̛͖̮̫͓̲̣̩͙͚̰͚̫̞̖͌̐̏͒͂͊͠B̷̧̡̜̼̩͉̭̘͔͖̯̦͇̯͔̙̤͂̀̐̌̐̈̃͒͑̆̕͝͝͝A̸̲̘̫̋̊͂́̔̀̊̌̓̋͠͝͝C̴͚̪̘͕̏̏̿́́̍̑̾͐͠ͅK̵̨̛͔͉̥̜̦̻̃̆́͆̿̇͑̓̈́̑̋̈́̚̕͜");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("wrath");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 7);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("Scary Bear Escape Minigame: Escape in time...");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("scarybear");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 8);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.gamemodeNewCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewTextObjects1[i].getBehavior("Text").setText("Ballie mode: Ballie is very mad at you becuz you stole his credit cards");
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationName("ball");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 9);
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(8);
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == -(1));
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(0);
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.gamemodeNewCode.eventsList0(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 1);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList1(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 2);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList2(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 3);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList3(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 4);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList4(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 5);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList5(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 6);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList6(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 7);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList7(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 8);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.gamemodeNewCode.eventsList8(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewSprite3"), gdjs.gamemodeNewCode.GDNewSprite3Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewSprite3Objects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewSprite3Objects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewSprite3Objects1[k] = gdjs.gamemodeNewCode.GDNewSprite3Objects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewSprite3Objects1.length = k;
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(1);
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewSprite2"), gdjs.gamemodeNewCode.GDNewSprite2Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewSprite2Objects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewSprite2Objects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewSprite2Objects1[k] = gdjs.gamemodeNewCode.GDNewSprite2Objects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewSprite2Objects1.length = k;
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(0).sub(1);
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewButton"), gdjs.gamemodeNewCode.GDNewButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.gamemodeNewCode.GDNewButtonObjects1.length;i<l;++i) {
-    if ( gdjs.gamemodeNewCode.GDNewButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.gamemodeNewCode.GDNewButtonObjects1[k] = gdjs.gamemodeNewCode.GDNewButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(64660612);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.gamemodeNewCode.GDNewButtonObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.gamemodeNewCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewSprite2"), gdjs.gamemodeNewCode.GDNewSprite2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("NewSprite3"), gdjs.gamemodeNewCode.GDNewSprite3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("RedButton"), gdjs.gamemodeNewCode.GDRedButtonObjects1);
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Tween").addObjectWidthTween2("size2", 1920, "linear", 2, false);
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Tween").addObjectHeightTween2("size", 1080, "linear", 2, false);
-}
-}
-{gdjs.evtTools.sound.playSound(runtimeScene, "lol_1.wav", false, 100, 1);
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSpriteObjects1[i].getBehavior("Tween").addObjectPositionTween2("move", 0, 0, "linear", 2, false);
-}
-}
-{gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 1);
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewButtonObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewButtonObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDRedButtonObjects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDRedButtonObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSprite2Objects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSprite2Objects1[i].activateBehavior("ButtonFSM", false);
-}
-}
-{for(var i = 0, len = gdjs.gamemodeNewCode.GDNewSprite3Objects1.length ;i < len;++i) {
-    gdjs.gamemodeNewCode.GDNewSprite3Objects1[i].activateBehavior("ButtonFSM", false);
-}
-}
+gdjs.winCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -991,303 +183,287 @@ gdjs.copyArray(runtimeScene.getObjects("RedButton"), gdjs.gamemodeNewCode.GDRedB
 
 };
 
-gdjs.gamemodeNewCode.func = function(runtimeScene) {
+gdjs.winCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.gamemodeNewCode.GDRedButtonObjects1.length = 0;
-gdjs.gamemodeNewCode.GDRedButtonObjects2.length = 0;
-gdjs.gamemodeNewCode.GDNewSpriteObjects1.length = 0;
-gdjs.gamemodeNewCode.GDNewSpriteObjects2.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = 0;
-gdjs.gamemodeNewCode.GDNewButtonObjects2.length = 0;
-gdjs.gamemodeNewCode.GDNewTextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDNewTextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock1Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock1Objects2.length = 0;
-gdjs.gamemodeNewCode.GDWoodObjects1.length = 0;
-gdjs.gamemodeNewCode.GDWoodObjects2.length = 0;
-gdjs.gamemodeNewCode.GDGrassGroundObjects1.length = 0;
-gdjs.gamemodeNewCode.GDGrassGroundObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlockInvObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlockInvObjects2.length = 0;
-gdjs.gamemodeNewCode.GDStairs1Objects1.length = 0;
-gdjs.gamemodeNewCode.GDStairs1Objects2.length = 0;
-gdjs.gamemodeNewCode.GDStairsInvObjects1.length = 0;
-gdjs.gamemodeNewCode.GDStairsInvObjects2.length = 0;
-gdjs.gamemodeNewCode.GDWoodStrsObjects1.length = 0;
-gdjs.gamemodeNewCode.GDWoodStrsObjects2.length = 0;
-gdjs.gamemodeNewCode.GDStopCrouchTrgObjects1.length = 0;
-gdjs.gamemodeNewCode.GDStopCrouchTrgObjects2.length = 0;
-gdjs.gamemodeNewCode.GDCameraObjects1.length = 0;
-gdjs.gamemodeNewCode.GDCameraObjects2.length = 0;
-gdjs.gamemodeNewCode.GDCamera2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDCamera2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDCameraColliderObjects1.length = 0;
-gdjs.gamemodeNewCode.GDCameraColliderObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaperObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaperObjects2.length = 0;
-gdjs.gamemodeNewCode.GDKeyObjects1.length = 0;
-gdjs.gamemodeNewCode.GDKeyObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemObjects2.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine1Objects1.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine1Objects2.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDInteractTextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDInteractTextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaperUIObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaperUIObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaperTextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaperTextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDDoorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDDoorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDDoorWayPointObjects1.length = 0;
-gdjs.gamemodeNewCode.GDDoorWayPointObjects2.length = 0;
-gdjs.gamemodeNewCode.GDFadeBLACKObjects1.length = 0;
-gdjs.gamemodeNewCode.GDFadeBLACKObjects2.length = 0;
-gdjs.gamemodeNewCode.GDCrossObjects1.length = 0;
-gdjs.gamemodeNewCode.GDCrossObjects2.length = 0;
-gdjs.gamemodeNewCode.GDInfo_9595TextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDInfo_9595TextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDScary_9595PersonObjects1.length = 0;
-gdjs.gamemodeNewCode.GDScary_9595PersonObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemsUIObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemsUIObjects2.length = 0;
-gdjs.gamemodeNewCode.GDStaminaObjects1.length = 0;
-gdjs.gamemodeNewCode.GDStaminaObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIStaminaObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIStaminaObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemSlotObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemSlotObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemInventoryObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemInventoryObjects2.length = 0;
-gdjs.gamemodeNewCode.GDSodaSplashObjects1.length = 0;
-gdjs.gamemodeNewCode.GDSodaSplashObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBearTrapObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBearTrapObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlackBarsObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlackBarsObjects2.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBaldiEnemyObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBaldiEnemyObjects2.length = 0;
-gdjs.gamemodeNewCode.GDfloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDfloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDfloor2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDfloor2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDfakewallObjects1.length = 0;
-gdjs.gamemodeNewCode.GDfakewallObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock3AltObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock3AltObjects2.length = 0;
-gdjs.gamemodeNewCode.GDelevatorfloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDelevatorfloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDElevatorWallObjects1.length = 0;
-gdjs.gamemodeNewCode.GDElevatorWallObjects2.length = 0;
-gdjs.gamemodeNewCode.GDRedNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDRedNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDGreenNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDGreenNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDYellowNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDYellowNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlueNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlueNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDRedFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDRedFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDGreenFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDGreenFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDYellowFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDYellowFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlueFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlueFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBallpitBallsObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBallpitBallsObjects2.length = 0;
-gdjs.gamemodeNewCode.GDHandObjects1.length = 0;
-gdjs.gamemodeNewCode.GDHandObjects2.length = 0;
-gdjs.gamemodeNewCode.GDhandmarkerObjects1.length = 0;
-gdjs.gamemodeNewCode.GDhandmarkerObjects2.length = 0;
-gdjs.gamemodeNewCode.GDhandmarker2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDhandmarker2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDcursorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDcursorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaddedFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaddedFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallSMG4Objects1.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallSMG4Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock4Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock4Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock1DetentionObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock1DetentionObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPosterObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPosterObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPoster2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDPoster2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDPoster3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDPoster3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDItemInventory2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDItemInventory2Objects2.length = 0;
+gdjs.winCode.GDNewSpriteObjects1.length = 0;
+gdjs.winCode.GDNewSpriteObjects2.length = 0;
+gdjs.winCode.GDBlock1Objects1.length = 0;
+gdjs.winCode.GDBlock1Objects2.length = 0;
+gdjs.winCode.GDWoodObjects1.length = 0;
+gdjs.winCode.GDWoodObjects2.length = 0;
+gdjs.winCode.GDGrassGroundObjects1.length = 0;
+gdjs.winCode.GDGrassGroundObjects2.length = 0;
+gdjs.winCode.GDBlockInvObjects1.length = 0;
+gdjs.winCode.GDBlockInvObjects2.length = 0;
+gdjs.winCode.GDStairs1Objects1.length = 0;
+gdjs.winCode.GDStairs1Objects2.length = 0;
+gdjs.winCode.GDStairsInvObjects1.length = 0;
+gdjs.winCode.GDStairsInvObjects2.length = 0;
+gdjs.winCode.GDWoodStrsObjects1.length = 0;
+gdjs.winCode.GDWoodStrsObjects2.length = 0;
+gdjs.winCode.GDStopCrouchTrgObjects1.length = 0;
+gdjs.winCode.GDStopCrouchTrgObjects2.length = 0;
+gdjs.winCode.GDCameraObjects1.length = 0;
+gdjs.winCode.GDCameraObjects2.length = 0;
+gdjs.winCode.GDCamera2Objects1.length = 0;
+gdjs.winCode.GDCamera2Objects2.length = 0;
+gdjs.winCode.GDCameraColliderObjects1.length = 0;
+gdjs.winCode.GDCameraColliderObjects2.length = 0;
+gdjs.winCode.GDPaperObjects1.length = 0;
+gdjs.winCode.GDPaperObjects2.length = 0;
+gdjs.winCode.GDKeyObjects1.length = 0;
+gdjs.winCode.GDKeyObjects2.length = 0;
+gdjs.winCode.GDItemObjects1.length = 0;
+gdjs.winCode.GDItemObjects2.length = 0;
+gdjs.winCode.GDVendingMachine1Objects1.length = 0;
+gdjs.winCode.GDVendingMachine1Objects2.length = 0;
+gdjs.winCode.GDVendingMachine2Objects1.length = 0;
+gdjs.winCode.GDVendingMachine2Objects2.length = 0;
+gdjs.winCode.GDInteractTextObjects1.length = 0;
+gdjs.winCode.GDInteractTextObjects2.length = 0;
+gdjs.winCode.GDPaperUIObjects1.length = 0;
+gdjs.winCode.GDPaperUIObjects2.length = 0;
+gdjs.winCode.GDPaperTextObjects1.length = 0;
+gdjs.winCode.GDPaperTextObjects2.length = 0;
+gdjs.winCode.GDDoorObjects1.length = 0;
+gdjs.winCode.GDDoorObjects2.length = 0;
+gdjs.winCode.GDDoorWayPointObjects1.length = 0;
+gdjs.winCode.GDDoorWayPointObjects2.length = 0;
+gdjs.winCode.GDFadeBLACKObjects1.length = 0;
+gdjs.winCode.GDFadeBLACKObjects2.length = 0;
+gdjs.winCode.GDCrossObjects1.length = 0;
+gdjs.winCode.GDCrossObjects2.length = 0;
+gdjs.winCode.GDInfo_9595TextObjects1.length = 0;
+gdjs.winCode.GDInfo_9595TextObjects2.length = 0;
+gdjs.winCode.GDScary_9595PersonObjects1.length = 0;
+gdjs.winCode.GDScary_9595PersonObjects2.length = 0;
+gdjs.winCode.GDItemsUIObjects1.length = 0;
+gdjs.winCode.GDItemsUIObjects2.length = 0;
+gdjs.winCode.GDStaminaObjects1.length = 0;
+gdjs.winCode.GDStaminaObjects2.length = 0;
+gdjs.winCode.GDBaldiUIObjects1.length = 0;
+gdjs.winCode.GDBaldiUIObjects2.length = 0;
+gdjs.winCode.GDBaldiUIStaminaObjects1.length = 0;
+gdjs.winCode.GDBaldiUIStaminaObjects2.length = 0;
+gdjs.winCode.GDItemSlotObjects1.length = 0;
+gdjs.winCode.GDItemSlotObjects2.length = 0;
+gdjs.winCode.GDItemInventoryObjects1.length = 0;
+gdjs.winCode.GDItemInventoryObjects2.length = 0;
+gdjs.winCode.GDSodaSplashObjects1.length = 0;
+gdjs.winCode.GDSodaSplashObjects2.length = 0;
+gdjs.winCode.GDBearTrapObjects1.length = 0;
+gdjs.winCode.GDBearTrapObjects2.length = 0;
+gdjs.winCode.GDBlackBarsObjects1.length = 0;
+gdjs.winCode.GDBlackBarsObjects2.length = 0;
+gdjs.winCode.GDVendingMachine3Objects1.length = 0;
+gdjs.winCode.GDVendingMachine3Objects2.length = 0;
+gdjs.winCode.GDBaldiEnemyObjects1.length = 0;
+gdjs.winCode.GDBaldiEnemyObjects2.length = 0;
+gdjs.winCode.GDfloorObjects1.length = 0;
+gdjs.winCode.GDfloorObjects2.length = 0;
+gdjs.winCode.GDfloor2Objects1.length = 0;
+gdjs.winCode.GDfloor2Objects2.length = 0;
+gdjs.winCode.GDBlock2Objects1.length = 0;
+gdjs.winCode.GDBlock2Objects2.length = 0;
+gdjs.winCode.GDBlock3Objects1.length = 0;
+gdjs.winCode.GDBlock3Objects2.length = 0;
+gdjs.winCode.GDfakewallObjects1.length = 0;
+gdjs.winCode.GDfakewallObjects2.length = 0;
+gdjs.winCode.GDBlock3AltObjects1.length = 0;
+gdjs.winCode.GDBlock3AltObjects2.length = 0;
+gdjs.winCode.GDelevatorfloorObjects1.length = 0;
+gdjs.winCode.GDelevatorfloorObjects2.length = 0;
+gdjs.winCode.GDElevatorWallObjects1.length = 0;
+gdjs.winCode.GDElevatorWallObjects2.length = 0;
+gdjs.winCode.GDRedNetObjects1.length = 0;
+gdjs.winCode.GDRedNetObjects2.length = 0;
+gdjs.winCode.GDGreenNetObjects1.length = 0;
+gdjs.winCode.GDGreenNetObjects2.length = 0;
+gdjs.winCode.GDYellowNetObjects1.length = 0;
+gdjs.winCode.GDYellowNetObjects2.length = 0;
+gdjs.winCode.GDBlueNetObjects1.length = 0;
+gdjs.winCode.GDBlueNetObjects2.length = 0;
+gdjs.winCode.GDRedFloorObjects1.length = 0;
+gdjs.winCode.GDRedFloorObjects2.length = 0;
+gdjs.winCode.GDGreenFloorObjects1.length = 0;
+gdjs.winCode.GDGreenFloorObjects2.length = 0;
+gdjs.winCode.GDYellowFloorObjects1.length = 0;
+gdjs.winCode.GDYellowFloorObjects2.length = 0;
+gdjs.winCode.GDBlueFloorObjects1.length = 0;
+gdjs.winCode.GDBlueFloorObjects2.length = 0;
+gdjs.winCode.GDBallpitBallsObjects1.length = 0;
+gdjs.winCode.GDBallpitBallsObjects2.length = 0;
+gdjs.winCode.GDHandObjects1.length = 0;
+gdjs.winCode.GDHandObjects2.length = 0;
+gdjs.winCode.GDhandmarkerObjects1.length = 0;
+gdjs.winCode.GDhandmarkerObjects2.length = 0;
+gdjs.winCode.GDhandmarker2Objects1.length = 0;
+gdjs.winCode.GDhandmarker2Objects2.length = 0;
+gdjs.winCode.GDcursorObjects1.length = 0;
+gdjs.winCode.GDcursorObjects2.length = 0;
+gdjs.winCode.GDPaddedWallObjects1.length = 0;
+gdjs.winCode.GDPaddedWallObjects2.length = 0;
+gdjs.winCode.GDPaddedFloorObjects1.length = 0;
+gdjs.winCode.GDPaddedFloorObjects2.length = 0;
+gdjs.winCode.GDPaddedWallSMG4Objects1.length = 0;
+gdjs.winCode.GDPaddedWallSMG4Objects2.length = 0;
+gdjs.winCode.GDBlock4Objects1.length = 0;
+gdjs.winCode.GDBlock4Objects2.length = 0;
+gdjs.winCode.GDBlock1DetentionObjects1.length = 0;
+gdjs.winCode.GDBlock1DetentionObjects2.length = 0;
+gdjs.winCode.GDPosterObjects1.length = 0;
+gdjs.winCode.GDPosterObjects2.length = 0;
+gdjs.winCode.GDPoster2Objects1.length = 0;
+gdjs.winCode.GDPoster2Objects2.length = 0;
+gdjs.winCode.GDPoster3Objects1.length = 0;
+gdjs.winCode.GDPoster3Objects2.length = 0;
+gdjs.winCode.GDItemInventory2Objects1.length = 0;
+gdjs.winCode.GDItemInventory2Objects2.length = 0;
+gdjs.winCode.GDbaldicatorObjects1.length = 0;
+gdjs.winCode.GDbaldicatorObjects2.length = 0;
 
-gdjs.gamemodeNewCode.eventsList9(runtimeScene);
-gdjs.gamemodeNewCode.GDRedButtonObjects1.length = 0;
-gdjs.gamemodeNewCode.GDRedButtonObjects2.length = 0;
-gdjs.gamemodeNewCode.GDNewSpriteObjects1.length = 0;
-gdjs.gamemodeNewCode.GDNewSpriteObjects2.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDNewSprite3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDNewButtonObjects1.length = 0;
-gdjs.gamemodeNewCode.GDNewButtonObjects2.length = 0;
-gdjs.gamemodeNewCode.GDNewTextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDNewTextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock1Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock1Objects2.length = 0;
-gdjs.gamemodeNewCode.GDWoodObjects1.length = 0;
-gdjs.gamemodeNewCode.GDWoodObjects2.length = 0;
-gdjs.gamemodeNewCode.GDGrassGroundObjects1.length = 0;
-gdjs.gamemodeNewCode.GDGrassGroundObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlockInvObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlockInvObjects2.length = 0;
-gdjs.gamemodeNewCode.GDStairs1Objects1.length = 0;
-gdjs.gamemodeNewCode.GDStairs1Objects2.length = 0;
-gdjs.gamemodeNewCode.GDStairsInvObjects1.length = 0;
-gdjs.gamemodeNewCode.GDStairsInvObjects2.length = 0;
-gdjs.gamemodeNewCode.GDWoodStrsObjects1.length = 0;
-gdjs.gamemodeNewCode.GDWoodStrsObjects2.length = 0;
-gdjs.gamemodeNewCode.GDStopCrouchTrgObjects1.length = 0;
-gdjs.gamemodeNewCode.GDStopCrouchTrgObjects2.length = 0;
-gdjs.gamemodeNewCode.GDCameraObjects1.length = 0;
-gdjs.gamemodeNewCode.GDCameraObjects2.length = 0;
-gdjs.gamemodeNewCode.GDCamera2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDCamera2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDCameraColliderObjects1.length = 0;
-gdjs.gamemodeNewCode.GDCameraColliderObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaperObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaperObjects2.length = 0;
-gdjs.gamemodeNewCode.GDKeyObjects1.length = 0;
-gdjs.gamemodeNewCode.GDKeyObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemObjects2.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine1Objects1.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine1Objects2.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDInteractTextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDInteractTextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaperUIObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaperUIObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaperTextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaperTextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDDoorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDDoorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDDoorWayPointObjects1.length = 0;
-gdjs.gamemodeNewCode.GDDoorWayPointObjects2.length = 0;
-gdjs.gamemodeNewCode.GDFadeBLACKObjects1.length = 0;
-gdjs.gamemodeNewCode.GDFadeBLACKObjects2.length = 0;
-gdjs.gamemodeNewCode.GDCrossObjects1.length = 0;
-gdjs.gamemodeNewCode.GDCrossObjects2.length = 0;
-gdjs.gamemodeNewCode.GDInfo_9595TextObjects1.length = 0;
-gdjs.gamemodeNewCode.GDInfo_9595TextObjects2.length = 0;
-gdjs.gamemodeNewCode.GDScary_9595PersonObjects1.length = 0;
-gdjs.gamemodeNewCode.GDScary_9595PersonObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemsUIObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemsUIObjects2.length = 0;
-gdjs.gamemodeNewCode.GDStaminaObjects1.length = 0;
-gdjs.gamemodeNewCode.GDStaminaObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIStaminaObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBaldiUIStaminaObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemSlotObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemSlotObjects2.length = 0;
-gdjs.gamemodeNewCode.GDItemInventoryObjects1.length = 0;
-gdjs.gamemodeNewCode.GDItemInventoryObjects2.length = 0;
-gdjs.gamemodeNewCode.GDSodaSplashObjects1.length = 0;
-gdjs.gamemodeNewCode.GDSodaSplashObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBearTrapObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBearTrapObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlackBarsObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlackBarsObjects2.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDVendingMachine3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBaldiEnemyObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBaldiEnemyObjects2.length = 0;
-gdjs.gamemodeNewCode.GDfloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDfloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDfloor2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDfloor2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDfakewallObjects1.length = 0;
-gdjs.gamemodeNewCode.GDfakewallObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock3AltObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock3AltObjects2.length = 0;
-gdjs.gamemodeNewCode.GDelevatorfloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDelevatorfloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDElevatorWallObjects1.length = 0;
-gdjs.gamemodeNewCode.GDElevatorWallObjects2.length = 0;
-gdjs.gamemodeNewCode.GDRedNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDRedNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDGreenNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDGreenNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDYellowNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDYellowNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlueNetObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlueNetObjects2.length = 0;
-gdjs.gamemodeNewCode.GDRedFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDRedFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDGreenFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDGreenFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDYellowFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDYellowFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBlueFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlueFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDBallpitBallsObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBallpitBallsObjects2.length = 0;
-gdjs.gamemodeNewCode.GDHandObjects1.length = 0;
-gdjs.gamemodeNewCode.GDHandObjects2.length = 0;
-gdjs.gamemodeNewCode.GDhandmarkerObjects1.length = 0;
-gdjs.gamemodeNewCode.GDhandmarkerObjects2.length = 0;
-gdjs.gamemodeNewCode.GDhandmarker2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDhandmarker2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDcursorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDcursorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaddedFloorObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPaddedFloorObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallSMG4Objects1.length = 0;
-gdjs.gamemodeNewCode.GDPaddedWallSMG4Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock4Objects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock4Objects2.length = 0;
-gdjs.gamemodeNewCode.GDBlock1DetentionObjects1.length = 0;
-gdjs.gamemodeNewCode.GDBlock1DetentionObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPosterObjects1.length = 0;
-gdjs.gamemodeNewCode.GDPosterObjects2.length = 0;
-gdjs.gamemodeNewCode.GDPoster2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDPoster2Objects2.length = 0;
-gdjs.gamemodeNewCode.GDPoster3Objects1.length = 0;
-gdjs.gamemodeNewCode.GDPoster3Objects2.length = 0;
-gdjs.gamemodeNewCode.GDItemInventory2Objects1.length = 0;
-gdjs.gamemodeNewCode.GDItemInventory2Objects2.length = 0;
+gdjs.winCode.eventsList1(runtimeScene);
+gdjs.winCode.GDNewSpriteObjects1.length = 0;
+gdjs.winCode.GDNewSpriteObjects2.length = 0;
+gdjs.winCode.GDBlock1Objects1.length = 0;
+gdjs.winCode.GDBlock1Objects2.length = 0;
+gdjs.winCode.GDWoodObjects1.length = 0;
+gdjs.winCode.GDWoodObjects2.length = 0;
+gdjs.winCode.GDGrassGroundObjects1.length = 0;
+gdjs.winCode.GDGrassGroundObjects2.length = 0;
+gdjs.winCode.GDBlockInvObjects1.length = 0;
+gdjs.winCode.GDBlockInvObjects2.length = 0;
+gdjs.winCode.GDStairs1Objects1.length = 0;
+gdjs.winCode.GDStairs1Objects2.length = 0;
+gdjs.winCode.GDStairsInvObjects1.length = 0;
+gdjs.winCode.GDStairsInvObjects2.length = 0;
+gdjs.winCode.GDWoodStrsObjects1.length = 0;
+gdjs.winCode.GDWoodStrsObjects2.length = 0;
+gdjs.winCode.GDStopCrouchTrgObjects1.length = 0;
+gdjs.winCode.GDStopCrouchTrgObjects2.length = 0;
+gdjs.winCode.GDCameraObjects1.length = 0;
+gdjs.winCode.GDCameraObjects2.length = 0;
+gdjs.winCode.GDCamera2Objects1.length = 0;
+gdjs.winCode.GDCamera2Objects2.length = 0;
+gdjs.winCode.GDCameraColliderObjects1.length = 0;
+gdjs.winCode.GDCameraColliderObjects2.length = 0;
+gdjs.winCode.GDPaperObjects1.length = 0;
+gdjs.winCode.GDPaperObjects2.length = 0;
+gdjs.winCode.GDKeyObjects1.length = 0;
+gdjs.winCode.GDKeyObjects2.length = 0;
+gdjs.winCode.GDItemObjects1.length = 0;
+gdjs.winCode.GDItemObjects2.length = 0;
+gdjs.winCode.GDVendingMachine1Objects1.length = 0;
+gdjs.winCode.GDVendingMachine1Objects2.length = 0;
+gdjs.winCode.GDVendingMachine2Objects1.length = 0;
+gdjs.winCode.GDVendingMachine2Objects2.length = 0;
+gdjs.winCode.GDInteractTextObjects1.length = 0;
+gdjs.winCode.GDInteractTextObjects2.length = 0;
+gdjs.winCode.GDPaperUIObjects1.length = 0;
+gdjs.winCode.GDPaperUIObjects2.length = 0;
+gdjs.winCode.GDPaperTextObjects1.length = 0;
+gdjs.winCode.GDPaperTextObjects2.length = 0;
+gdjs.winCode.GDDoorObjects1.length = 0;
+gdjs.winCode.GDDoorObjects2.length = 0;
+gdjs.winCode.GDDoorWayPointObjects1.length = 0;
+gdjs.winCode.GDDoorWayPointObjects2.length = 0;
+gdjs.winCode.GDFadeBLACKObjects1.length = 0;
+gdjs.winCode.GDFadeBLACKObjects2.length = 0;
+gdjs.winCode.GDCrossObjects1.length = 0;
+gdjs.winCode.GDCrossObjects2.length = 0;
+gdjs.winCode.GDInfo_9595TextObjects1.length = 0;
+gdjs.winCode.GDInfo_9595TextObjects2.length = 0;
+gdjs.winCode.GDScary_9595PersonObjects1.length = 0;
+gdjs.winCode.GDScary_9595PersonObjects2.length = 0;
+gdjs.winCode.GDItemsUIObjects1.length = 0;
+gdjs.winCode.GDItemsUIObjects2.length = 0;
+gdjs.winCode.GDStaminaObjects1.length = 0;
+gdjs.winCode.GDStaminaObjects2.length = 0;
+gdjs.winCode.GDBaldiUIObjects1.length = 0;
+gdjs.winCode.GDBaldiUIObjects2.length = 0;
+gdjs.winCode.GDBaldiUIStaminaObjects1.length = 0;
+gdjs.winCode.GDBaldiUIStaminaObjects2.length = 0;
+gdjs.winCode.GDItemSlotObjects1.length = 0;
+gdjs.winCode.GDItemSlotObjects2.length = 0;
+gdjs.winCode.GDItemInventoryObjects1.length = 0;
+gdjs.winCode.GDItemInventoryObjects2.length = 0;
+gdjs.winCode.GDSodaSplashObjects1.length = 0;
+gdjs.winCode.GDSodaSplashObjects2.length = 0;
+gdjs.winCode.GDBearTrapObjects1.length = 0;
+gdjs.winCode.GDBearTrapObjects2.length = 0;
+gdjs.winCode.GDBlackBarsObjects1.length = 0;
+gdjs.winCode.GDBlackBarsObjects2.length = 0;
+gdjs.winCode.GDVendingMachine3Objects1.length = 0;
+gdjs.winCode.GDVendingMachine3Objects2.length = 0;
+gdjs.winCode.GDBaldiEnemyObjects1.length = 0;
+gdjs.winCode.GDBaldiEnemyObjects2.length = 0;
+gdjs.winCode.GDfloorObjects1.length = 0;
+gdjs.winCode.GDfloorObjects2.length = 0;
+gdjs.winCode.GDfloor2Objects1.length = 0;
+gdjs.winCode.GDfloor2Objects2.length = 0;
+gdjs.winCode.GDBlock2Objects1.length = 0;
+gdjs.winCode.GDBlock2Objects2.length = 0;
+gdjs.winCode.GDBlock3Objects1.length = 0;
+gdjs.winCode.GDBlock3Objects2.length = 0;
+gdjs.winCode.GDfakewallObjects1.length = 0;
+gdjs.winCode.GDfakewallObjects2.length = 0;
+gdjs.winCode.GDBlock3AltObjects1.length = 0;
+gdjs.winCode.GDBlock3AltObjects2.length = 0;
+gdjs.winCode.GDelevatorfloorObjects1.length = 0;
+gdjs.winCode.GDelevatorfloorObjects2.length = 0;
+gdjs.winCode.GDElevatorWallObjects1.length = 0;
+gdjs.winCode.GDElevatorWallObjects2.length = 0;
+gdjs.winCode.GDRedNetObjects1.length = 0;
+gdjs.winCode.GDRedNetObjects2.length = 0;
+gdjs.winCode.GDGreenNetObjects1.length = 0;
+gdjs.winCode.GDGreenNetObjects2.length = 0;
+gdjs.winCode.GDYellowNetObjects1.length = 0;
+gdjs.winCode.GDYellowNetObjects2.length = 0;
+gdjs.winCode.GDBlueNetObjects1.length = 0;
+gdjs.winCode.GDBlueNetObjects2.length = 0;
+gdjs.winCode.GDRedFloorObjects1.length = 0;
+gdjs.winCode.GDRedFloorObjects2.length = 0;
+gdjs.winCode.GDGreenFloorObjects1.length = 0;
+gdjs.winCode.GDGreenFloorObjects2.length = 0;
+gdjs.winCode.GDYellowFloorObjects1.length = 0;
+gdjs.winCode.GDYellowFloorObjects2.length = 0;
+gdjs.winCode.GDBlueFloorObjects1.length = 0;
+gdjs.winCode.GDBlueFloorObjects2.length = 0;
+gdjs.winCode.GDBallpitBallsObjects1.length = 0;
+gdjs.winCode.GDBallpitBallsObjects2.length = 0;
+gdjs.winCode.GDHandObjects1.length = 0;
+gdjs.winCode.GDHandObjects2.length = 0;
+gdjs.winCode.GDhandmarkerObjects1.length = 0;
+gdjs.winCode.GDhandmarkerObjects2.length = 0;
+gdjs.winCode.GDhandmarker2Objects1.length = 0;
+gdjs.winCode.GDhandmarker2Objects2.length = 0;
+gdjs.winCode.GDcursorObjects1.length = 0;
+gdjs.winCode.GDcursorObjects2.length = 0;
+gdjs.winCode.GDPaddedWallObjects1.length = 0;
+gdjs.winCode.GDPaddedWallObjects2.length = 0;
+gdjs.winCode.GDPaddedFloorObjects1.length = 0;
+gdjs.winCode.GDPaddedFloorObjects2.length = 0;
+gdjs.winCode.GDPaddedWallSMG4Objects1.length = 0;
+gdjs.winCode.GDPaddedWallSMG4Objects2.length = 0;
+gdjs.winCode.GDBlock4Objects1.length = 0;
+gdjs.winCode.GDBlock4Objects2.length = 0;
+gdjs.winCode.GDBlock1DetentionObjects1.length = 0;
+gdjs.winCode.GDBlock1DetentionObjects2.length = 0;
+gdjs.winCode.GDPosterObjects1.length = 0;
+gdjs.winCode.GDPosterObjects2.length = 0;
+gdjs.winCode.GDPoster2Objects1.length = 0;
+gdjs.winCode.GDPoster2Objects2.length = 0;
+gdjs.winCode.GDPoster3Objects1.length = 0;
+gdjs.winCode.GDPoster3Objects2.length = 0;
+gdjs.winCode.GDItemInventory2Objects1.length = 0;
+gdjs.winCode.GDItemInventory2Objects2.length = 0;
+gdjs.winCode.GDbaldicatorObjects1.length = 0;
+gdjs.winCode.GDbaldicatorObjects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['gamemodeNewCode'] = gdjs.gamemodeNewCode;
+gdjs['winCode'] = gdjs.winCode;
