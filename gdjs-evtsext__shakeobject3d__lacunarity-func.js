@@ -9,7 +9,7 @@ gdjs.evtsExt__ShakeObject3D__Lacunarity = {};
 gdjs.evtsExt__ShakeObject3D__Lacunarity.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ShakeObject3D__Lacunarity.userFunc0xfa68e0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__Lacunarity.userFunc0x6a4de8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -20,7 +20,7 @@ gdjs.evtsExt__ShakeObject3D__Lacunarity.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__ShakeObject3D__Lacunarity.userFunc0xfa68e0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject3D__Lacunarity.userFunc0x6a4de8(runtimeScene, eventsFunctionContext);
 
 }
 
